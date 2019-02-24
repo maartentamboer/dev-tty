@@ -1,4 +1,4 @@
-baseURL = "http://dev-tty.nl/"
+baseURL = "http://maartentamboer.github.io/"
 languageCode = "en-us"
 title = "dev-tty"
 theme = "hello-friend"
