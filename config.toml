@@ -1,76 +1,62 @@
-baseURL = "https://dev-tty.nl/"
+baseurl      = "https://dev-tty.nl"
+title        = "My Personal Website"
 languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "dev-tty"
-theme = "hermit"
-# enableGitInfo = true
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
-rssLimit = 10  # Maximum number of items in the RSS feed.
-copyright = "Maarten Tamboer" # This message is only used by the RSS template.
-enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
-googleAnalytics = "UA-135480982-1"
-# disqusShortname = "yourdiscussshortname"
-
-[author]
-  name = "Maarten Tamboer"
-
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  # Categories are disabled by default.
+theme        = "hello-friend-ng"
+paginate     = 10
 
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Embedded Software Architect"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  # description = ""
-  # images = [""]
-  themeColor = "#494f5c"
-
-  homeSubtitle = "Random software engineering thoughts"
-  #footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  # bgImg = ""  # Homepage background-image URL
-
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
-
-  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = false  # Set "text-align: justify" to `.content`.
-
-  # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
-
-  # Social Icons
-  # Check https://github.com/Track3/hermit#social-icons for more info.
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/maartentamboer"
+  description = "Personal Website"
+  keywords = "homepage, blog"
+  images = [""]
+  [params.portrait]
+    path     = "/images/MAATAMsquare.jpg"
+    alt      = "Portrait"
+    maxWidth = "200px"
 
   [[params.social]]
-    name = "instagram"
-    url = "https://www.instagram.com/nerd_that_travels/"
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/maartentamboer/"
 
   [[params.social]]
     name = "github"
-    url = "https://github.com/maartentamboer"
+    url  = "https://github.com/maartentamboer"
 
-[menu]
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/maartentamboer"
 
-  [[menu.main]]
-    name = "Posts"
-    url = "posts/"
-    weight = 10
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 
-  [[menu.main]]
-    name = "About"
-    url = "about/"
-    weight = 20
+[languages]
+  [languages.en]
+    title = "Maarten Tamboer"
+    subtitle = "Embedded Software Architect"
+    keywords = ""
+    copyright = 'Maarten Tamboer'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "$ ls /dev/tty*"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
